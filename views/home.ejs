@@ -1,0 +1,52 @@
+<body>
+<% layout('boilerplate') -%>
+
+<script src="/js/many-lines/adapted.particles.js"></script>
+<script src="/js/many-lines/adapted.library.js"></script>
+
+<script>
+	$(document).ready(function() {
+		init();
+		initParticleSystem();
+	});	
+
+	var href = function(page) {
+		window.location = '/' + page;
+	};
+</script>
+<canvas height="700" width="700" id="canvas">&nbsp;</canvas>
+
+<div id='holder'>
+	<section id="content">
+		<header>
+			<section id="logo">
+				<span class="line">line</s0pan>
+				<span class="description"> a health care design studio in the heart of Copenhagen</span>
+			</section>
+		</header>
+	</section>
+	<section id="intro">
+		<div class="content">
+			<div id="boxes" class="clearfix">
+				<section id="web-applications" onclick='href("about")'>
+					<h3>About</h3>
+					<p>Express is a minimal and flexible node.js web application framework, providing
+						a robust set of features for building single and multi-page, and hybrid web applications.</p>
+				</section>
+				<section id="apis" onclick='href("deliverables")'>
+					<h3>Deliverables</h3>
+					<p>With a myriad of HTTP utility methods and Connect middleware at your disposal, creating a robust user-friendly API is quick and easy.</p>
+				</section>
+				<section id="performance" onclick='href("work")'>
+					<h3>Work</h3>
+					<p>Express provides a thin layer of features fundamental to any web application, without obscuring features that you know and love in node.js</p>
+				</section>
+				<section id="book" onclick='href("contact")'>
+					<h3>Contact</h3>
+					<p>Express provides a thin layer of features fundamental to any web application, without obscuring features that you know and love in node.js</p>
+				</section>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
