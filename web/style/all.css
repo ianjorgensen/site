@@ -30,6 +30,13 @@ ul {
   vertical-align: baseline;
   list-style: none;
 }
+.fullwidth {
+  width: 100%;
+  height: 100%;
+  /*auto;*/
+
+  display: block;
+}
 .edge {
   margin: 0px !important;
 }
@@ -93,6 +100,53 @@ h1 {
   width: 225px;
   height: 250px;
 }
+#contact #office {
+  padding-top: 80px;
+}
+#contact #office img {
+  width: 100%;
+  height: 100%;
+  /*auto;*/
+
+  display: block;
+}
+#contact #office img,
+#contact #office ul {
+  float: left;
+  margin: 0px 3% 0px 0;
+  width: 39.5%;
+}
+#contact #office ul {
+  padding-top: 80px;
+  margin: 0px !important;
+}
+#contact #facilities {
+  padding-top: 40px;
+}
+#contact #facilities img {
+  width: 100%;
+  height: 100%;
+  /*auto;*/
+
+  display: block;
+  display: none;
+}
+#contact #facilities img:first-child {
+  display: block;
+}
+#contact #facilities p {
+  padding-top: 40px;
+  margin: 0px !important;
+}
+#contact #facilities p,
+#contact #facilities ul {
+  float: left;
+  margin: 0px 3% 0px 0;
+  width: 39.5%;
+}
+#work {
+  display: none;
+}
 #deliverables h2 {
   font-size: 1.17em;
   margin: 5px 0;
@@ -140,6 +194,9 @@ h1 {
   margin: 0px 3% 0px 0;
   width: 31%;
   padding-bottom: 15px;
+}
+#about #partners a {
+  text-weight: bold;
 }
 #about #love li {
   float: left;

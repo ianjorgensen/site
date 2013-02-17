@@ -39,6 +39,12 @@ ol, ul {
 }
 
 
+.fullwidth {
+	width: 100%;
+	height: 100%; /*auto;*/
+	display: block;
+}
+
 .column (@left: 30px) {
 	float: left;
 	margin: 0px 3% 0px 0;
@@ -64,9 +70,7 @@ ol, ul {
 .col12 { width: 99%; margin-left: 0;}
 
 li img {
-	width: 100%;
-	height: 100%; /*auto;*/
-	display: block;
+	.fullwidth;
 }
 
 h1 {
@@ -84,6 +88,57 @@ h1 {
 		width: 225px;
 		height: 250px;
 	}
+}
+
+#contact {
+	#office {
+		padding-top: 80px;
+
+		img {
+			.fullwidth;
+		}
+
+		img, ul {
+			.column;
+			.col5;
+		}		
+
+		ul {
+			padding-top: 80px;
+			.edge;
+		}
+	}
+
+	#facilities {
+		padding-top: 40px;	
+
+		img {
+			.fullwidth;
+			display: none;
+		}
+
+		img:first-child {
+			display: block;
+		}
+
+		ul {
+		}
+
+		p {
+			padding-top: 40px;
+			.edge;
+		}
+		
+		p, ul {
+
+			.column;
+			.col5;
+		}
+	}
+}
+
+#work {
+	display: none;
 }
 #deliverables {
 	h2 {
@@ -139,6 +194,10 @@ h1 {
 			.column;
 			.col4;	
 			padding-bottom: 15px;
+		}
+
+		a {
+			text-weight: bold;
 		}
 	}
 
