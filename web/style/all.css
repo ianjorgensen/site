@@ -36,20 +36,42 @@ ul {
 .clear {
   clear: both;
 }
-.col2 {
-  width: 141px;
+.col1 {
+  width: 5.5%;
 }
-.col4 {
-  width: 313px;
+.col2 {
+  width: 14%;
 }
 .col3 {
-  width: 227px;
+  width: 22.5%;
+}
+.col4 {
+  width: 31%;
+}
+.col5 {
+  width: 39.5%;
 }
 .col6 {
-  width: 485px;
+  width: 48%;
+}
+.col7 {
+  width: 56.5%;
 }
 .col8 {
-  width: 657px;
+  width: 65%;
+}
+.col9 {
+  width: 73.5%;
+}
+.col10 {
+  width: 82%;
+}
+.col11 {
+  width: 90.5%;
+}
+.col12 {
+  width: 99%;
+  margin-left: 0;
 }
 li img {
   width: 100%;
@@ -63,8 +85,8 @@ h1 {
 }
 #works li {
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 227px;
+  margin: 0px 3% 0px 0;
+  width: 22.5%;
   padding-bottom: 15px;
 }
 #works img {
@@ -89,14 +111,14 @@ h1 {
 }
 #deliverables ul li img {
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 313px;
+  margin: 0px 3% 0px 0;
+  width: 31%;
 }
 #deliverables ul li .byline {
   padding-top: 35px;
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 657px;
+  margin: 0px 3% 0px 0;
+  width: 65%;
   margin: 0px !important;
 }
 #about section {
@@ -110,18 +132,18 @@ h1 {
 }
 #about #team li {
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 485px;
+  margin: 0px 3% 0px 0;
+  width: 48%;
 }
 #about #partners li {
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 313px;
+  margin: 0px 3% 0px 0;
+  width: 31%;
   padding-bottom: 15px;
 }
 #about #love li {
   float: left;
-  margin: 0px 30px 0px 0;
-  width: 141px;
+  margin: 0px 3% 0px 0;
+  width: 14%;
   padding-top: 15px;
 }
