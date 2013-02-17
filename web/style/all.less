@@ -1,78 +1,143 @@
 #content {
-	width: 1000px;
-	margin-bottom: 80px;
-	margin: auto;	
+  width: 1000px;
+  margin-bottom: 80px;
+  margin: auto; 
 }
+
 .inner {
-	margin: 0px;
-}
-.inner #logo .line {
-	font-size: 25px;
 
-}
+  #logo {
+    position: absolute;
+    padding: 10px 0px;
 
-.inner #logo {
-	position: absolute;
-	padding: 10px 0px;
-}
-
-.inner header {
-	position: relative;
-	margin: 10px 0;
+    .line {
+      font-size: 25px;
+    }
+  }
+  
+  header {
+    position: relative;
+    margin: 10px 0;
+  }
 }
 
 nav {
-	position: relative;
-	float: right;
-	right: 0px;
-	margin-top: -4px;
+  position: relative;
+  float: right;
+  right: 0px;
+  margin-top: -4px;
 }
 
 ol, ul {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
 }
 
+
+.column (@left: 30px) {
+	float: left;
+	margin: 0px @left 0px 0;
+}
 .edge {
 	margin: 0px !important;
 }
-
 .clear {
 	clear: both;
 }
 
-#about {
-	h2 {
-		margin: 5px 0;
+.col2 { width: 141px; }
+.col4 { width: 313px; }
+.col3 { width: 227px; }
+.col6 { width: 485px; }
+.col8 { width: 657px; }
+
+li img {
+	width: 100%;
+	height: 100%; /*auto;*/
+	display: block;
+}
+
+h1 {
+	font-size: 1.17em;
+}
+
+#works {
+	li {
+		.column;
+		.col3;
+		padding-bottom: 15px;
 	}
 
+	img {
+		width: 225px;
+		height: 250px;
+	}
+}
+#deliverables {
+	h2 {
+		font-size: 1.17em;		
+		margin: 5px 0;
+	}
+	img {
+		width: 313px;
+	}
+	p {
+		margin: 10px 0;
+	}
+	ul {
+		padding-top: 15px;
+
+		li {
+			padding-bottom: 15px;
+			img {
+				.column;
+				.col4;
+			}
+			.byline {
+				padding-top: 35px;
+				.column;
+				.col8;
+				.edge;
+			}
+		}
+	}
+}
+#about {
 	section {
 		padding-top: 40px;
+	}
+
+	p {
+		margin: 10px 0;
 	}
 
 	#mission {
 		padding-top: 0px;
 	}
-	313
+	
 	#team {
 		li {
-			float: left;
-			margin-right: 30px;
-			width: 485px;
-
-			img {
-				width: 100%;
-				height: 100%; /*auto;*/
-				display: block;
-			}
-		}	
+			.column;
+			.col6;
+		}
 	}
-	p {
-		margin: 10px 0;
-	}	
+
+	#partners {
+		li {
+			.column;
+			.col4;	
+			padding-bottom: 15px;
+		}
+	}
+
+	#love li {
+		.column;
+		.col2;
+		padding-top: 15px;
+	}
 }
