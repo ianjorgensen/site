@@ -35,7 +35,6 @@
  */
 .onepcssgrid-1000, .onepcssgrid-1200 {
 	margin: 0 auto;
-	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
 }
 
 .onepcssgrid-1200 {
@@ -43,12 +42,11 @@
 }
 
 .onepcssgrid-1000 {
-	max-width: 1020px;
+	max-width: 1000px;
 }
 
 .onerow {
 	clear: both;
-	padding: 0 10px;
 }
 
 
@@ -60,19 +58,12 @@
  */
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
 	float: left;
-	margin: 5px 3% 5px 0;
-	padding: 5px 0;
+	margin: 0px 3% 0px 0;
 	/*margin: 0 3% 0 0;*/
 }
 
-.col1.first, .col2.first, .col3.first, .col4.first, .col5.first, .col6.first, .col7.first, .col8.first, .col9.first, .col10.first, .col11.first, .col12 {
-	clear: both;
-}
-
 .col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
-	/*margin: 0;*/
-	margin: 5px 0 5px 0;
-	padding: 5px 0;
+	margin: 0;
 }
 
 .col1 { width: 5.5%; }
@@ -90,7 +81,7 @@
 
 .col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
 	width: 100%;
-	height: auto;
+	height: 100%; /*auto;*/
 	display: block;
 }
 
@@ -100,7 +91,7 @@
 
 /* *********************************************************************************************************************
  * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
- */
+ 
 @media all and (min-width: 1024px) {
 	.onepcssgrid-1000 {
 		max-width: 1000px;
@@ -110,14 +101,14 @@
 		padding: 0;
 	}
 }
-
+*/
 
 
 
 
 /* *********************************************************************************************************************
  * Small devices
- */
+
 @media all and (max-width: 768px) {
 	.onerow {
 	}
@@ -126,4 +117,4 @@
 		float: none;
 		width: 99%;
 	}
-}
+} */
