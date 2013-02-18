@@ -47,13 +47,10 @@ strong {
   width: 100px;
   margin: auto;
   font-size: 12px;
+  padding: 10px;
 }
 .current-page {
   font-size: 16px;
-}
-#intro .content {
-  margin-left: 80px;
-  min-width: 1200px;
 }
 #content {
   margin-left: 80px;
@@ -165,35 +162,44 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 /* boxes */
-#boxes {
+#intro div {
+  margin-left: 80px;
+  min-width: 1200px;
+}
+#intro ul {
   background: url(/img/hr.png) top center no-repeat;
   margin-left: 180px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 12px;
 }
-#boxes section:hover {
-  background: rgba(248, 248, 248, 0.7);
-  cursor: pointer;
-}
-.inner #boxes {
-  font-size: 13px;
-}
-#boxes section {
+#intro li {
   width: 200px;
   padding: 10px;
   margin: 0 25px;
   float: left;
 }
-#boxes h3 {
+#intro li:hover {
+  background: rgba(248, 248, 248, 0.7);
+  text-decoration: none !important;
+}
+#intro p {
+  font-size: 13px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #777;
+}
+#intro a:hover {
+  text-decoration: none;
+}
+#intro h3 {
   background: none;
   margin-top: 0;
   padding-top: 0;
 }
-#boxes section p {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 20px;
+#intro h3:hover {
+  text-decoration: none !important;
 }
 /* ipad landscape
 @media all and (max-width: 1200px) {}

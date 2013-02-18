@@ -177,7 +177,7 @@ function setColor(targ){
 		var colorTint = Math.round(Math.random() * 7);
 		targ.colorTint = colorTint;
 		//getColor(colorTint);
-		_a = .55;
+		_a = .75;
 		if (colorTint <= 1){
 			_r = 255;
 			_g = 0;

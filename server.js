@@ -14,8 +14,13 @@ app.set('views',__dirname + '/views');
 app.get('/', function(request, response) {
 	response.render('home', {rows: []});
 });
+
+app.get('/work/:project', function(request, response) {
+	response.render('work/' + request.params.project + '.ejs', {page: {name: 'work', title: 'work | ' + request.params.project}});
+});
+
 app.get('/:view', function(request, response) {
-	response.render(request.params.view, {page: {name: request.params.view}});
+	response.render(request.params.view, {page: {name: request.params.view, title: request.params.view}});
 });
 
 app.use(less({ src: public }));

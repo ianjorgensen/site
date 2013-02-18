@@ -1,0 +1,170 @@
+<% layout('boilerplate') -%>
+<body class='inner'>  
+<style>
+#content {
+	width: 990px;
+	margin-bottom: 80px;
+	margin: auto;	
+}
+.inner {
+	margin: 0px;
+}
+.inner #logo .line {
+	font-size: 25px;
+
+}
+
+.inner #logo {
+	position: absolute;
+	padding: 10px 0px;
+}
+
+.inner header {
+	position: relative;
+	margin: 10px 0;
+}
+nav {
+	position: relative;
+	float: right;
+	right: 0px;
+	margin-top: -4px;
+}
+.pad {
+	
+	padding-left: 10px;	
+}
+
+p {
+	margin: 0px;
+}
+.pad last {
+	padding-right: 10px;
+}
+
+h4 {
+font-size: 12px;
+text-transform: uppercase;
+font-style: italic;
+color: grey;
+font-weight: normal;
+margin: 0px;
+}
+.info ul {
+	list-style-type: none;
+	margin-left: 0;
+	margin: 3px;
+	padding: 0px;
+}
+
+.info {
+	background-color: rgba(248, 248, 248, 0.7);
+	padding: 15px;
+}
+.info li {
+	color: #0098AF;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+</style>
+<section id="content" class='work onepcssgrid-1000'>
+	<%- partial('header', {active: 'work'}) %>
+	
+	<!-- This is the title -->
+	<div class="col12 pad last">
+		<h1>Curiocity</h1>	
+	</div>
+
+	<!-- This is the info box -->
+	<div class="col3 first pad">
+		<div class="info">
+			<ul>
+		    	<li><h4>Collaborated with</h4></li> <!-- this is the header for a section in the box -->
+		    	<li>Momo Miyazaki</li> <!-- this is the list of the things in the section -->
+		    	<li>Rohit Sharma</li>
+		  	</ul>
+		  	<ul>
+		    	<li><h4>Date</h4></li>
+		    	<li>2012</li>
+		  	</ul>
+  		</div>
+	</div>	
+	<!-- This is the intro text -->
+	<div class="col9 last pad">
+			<p>Curiousity is a service that pulls the most recent questions on blogs about the medicine your about to pick up. When you start a new medicine, you don’t always know what to ask. curiocity is a service that brings relevant questions from online health communities to you, at a moment where you could use some support.</p>
+			<p>When you go to the pharmacy to pick up a prescription, the pharmacist gives you a tailored list of the most discussed questions about the treatment you’re about to take. These questions, covering topics from side effects to lifestyle decisions, come from forums, blogs, and patient group communities. The questions are tailored based on your age, sex, and medication. If you find a question that is helpful and relevant, you can ask the pharmacist when they come back with your prescription.</p>
+	</div>
+	<div class="col12 last">
+		<img width='565' src='http://vimeo.com/57645468'>
+	</div>
+	<div class="col12 last">
+		<p>Each Curiocity sheet has a web address that leads to your tailored list of questions, an opportunity to access the heart of the online discussion that is relevant to you. The curiocity website also allows you to explore other questions or type in your own. By sharing information, we empower each other to know and act on the things that matter.</p>
+	</div>
+<div class="col7 first">
+		<img width='565' src='/img/curiosity_fron_big.png'>
+	</div>
+	<div class="col5 last">
+		<img width='395' src='/img/curiosity_back_small.png'>
+	</div>
+	<div class="col5 last">
+		<img width='395' src='/img/Curiousity_process.png'>
+	</div>
+	
+
+	<!-- ########################### From here you can add ass many secitons as you like ########################### -->
+	<!--
+
+	wide-image narrow-image
+	
+	<div class="col7 first">
+		<img width='565' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+	<div class="col5 last">
+		<img width='395' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+
+	narrow-image wide-image 
+	
+	<div class="col5 first">
+		<img width='395' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	<div class="col7 last">
+		<img width='565' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	
+	text
+	<div class="col12 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+
+	image
+	<div class="col12 last">
+		<img width='990px' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+
+	wide-image narrow-text
+	<div class="col7 first">
+		<img width='565' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+	<div class="col5 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+	
+	narrow-image wide-text
+	<div class="col5 first">
+		<img width='395' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	<div class="col7 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+-->
+	
+	<!-- ###########################  End of section where you can add and remove elements ########################### -->	
+
+	<div class="col12 last">
+		<%- partial('footer') %>
+	</div>
+</section>
+</body>

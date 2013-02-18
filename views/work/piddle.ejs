@@ -1,0 +1,181 @@
+<% layout('boilerplate') -%>
+<body class='inner'>  
+<style>
+#content {
+	width: 990px;
+	margin-bottom: 80px;
+	margin: auto;	
+}
+.inner {
+	margin: 0px;
+}
+.inner #logo .line {
+	font-size: 25px;
+
+}
+
+.inner #logo {
+	position: absolute;
+	padding: 10px 0px;
+}
+
+.inner header {
+	position: relative;
+	margin: 10px 0;
+}
+nav {
+	position: relative;
+	float: right;
+	right: 0px;
+	margin-top: -4px;
+}
+.pad {
+	
+	padding-left: 10px;	
+}
+
+p {
+	margin: 0px;
+}
+.pad last {
+	padding-right: 10px;
+}
+
+h4 {
+font-size: 12px;
+text-transform: uppercase;
+font-style: italic;
+color: grey;
+font-weight: normal;
+margin: 0px;
+}
+.info ul {
+	list-style-type: none;
+	margin-left: 0;
+	margin: 3px;
+	padding: 0px;
+}
+
+.info {
+	background-color: rgba(248, 248, 248, 0.7);
+	padding: 15px;
+}
+.info li {
+	color: #0098AF;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+</style>
+<section id="content" class='work onepcssgrid-1000'>
+	<%- partial('header', {active: 'work'}) %>
+	
+	<!-- This is the title -->
+	<div class="col12 pad last">
+		<h1>Piddle</h1>	
+	</div>
+
+	<!-- This is the info box -->
+	<div class="col4 first pad">
+		<div class="info">
+			<ul>
+		    	<li><h4>Collaborated with</h4></li> <!-- this is the header for a section in the box -->
+		    	<li>Marcin Ignac</li> <!-- this is the list of the things in the section -->
+		    	<li>Pau Ramon</li>
+		    	<li>Kat Zorina</li>
+		    	<li>Hideaki Matsui</li>
+		    	<li><h4>Recognition</h4></li>
+		    	<li>Winner of Health Hack Day, Stockholm</li>
+		  	</ul>
+		  	<ul>
+		    	<li><h4>Date</h4></li>
+		    	<li>2012</li>
+		  	</ul>
+  		</div>
+	</div>	
+	<!-- This is the intro text -->
+	<div class="col8 last pad">
+		<p>An iPhone app for urine test strip analysis. Using urine test strips can be hard, even for a professional. It requires focus, good timing, handling many things at the same time, but more importantly, the ability to accurately compare colors. Piddle guides you through the process, takes, and tracks the test results. It explains the meaning of each result and shows how your values fall within normal ranges. The results are stored and can be shared with your doctor.
+</p>
+</div>
+<div class="col5 first">
+		<img width='395' src='/img/piddel_strips.png'>
+	</div>
+
+		<div class="col7 last">
+		<p>Urinalysis is an important tool in disease detection, as well as monitoring and screening health. Abnormalities can be indicative of diseases of the urinary system as well as other organ systems, including liver function, and carbohydrate metabolism. Chemical evaluation of urine can be measured using commercially available in house dipstick tests. The app currently works with Multistix® 10 SG Reagent Strips. The strips can perform analyses on blood, bilirubin, glucose, ketones, pH, protein, specific gravity, urobilinogen, leukocytes, and nitrite.</p>
+		</div>
+	
+	<div class="col12 last">
+		<img width='990px' src='/img/piddle_process.png'>
+	</div>
+
+	
+	<div class="col7 first">
+		<img width='565' src='/img/piddle_tutorial.png'>
+	</div>
+	<div class="col5 last">
+		<p>All tests are stored along with their respective photo. You can track your progress, learn about each test, understand their significance and see what results are consistently outside of normal ranges. You can also choose to share one, a few, or all of you results with your healthcare team.</p>
+	</div>
+
+
+	<!-- ########################### From here you can add ass many secitons as you like ########################### -->
+
+	<!--
+
+	wide-image narrow-image
+	
+	<div class="col7 first">
+		<img width='565' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+	<div class="col5 last">
+		<img width='395' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+
+	narrow-image wide-image 
+	
+	<div class="col5 first">
+		<img width='395' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	<div class="col7 last">
+		<img width='565' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	
+	text
+
+	<div class="col12 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+
+	image
+	<div class="col12 last">
+		<img width='990px' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+
+	wide-image narrow-text
+	<div class="col7 first">
+		<img width='565' src='http://www.shape.dk/sites/default/files/Services_code_review_0.png?1351455265'>
+	</div>
+	<div class="col5 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+	
+	narrow-image wide-text
+	<div class="col5 first">
+		<img width='395' src='/img/IMAGE-FILENAME.EXTENSION'>
+	</div>
+	<div class="col7 last">
+		<p>TEXT GOES HERE</p>
+	</div>
+-->
+	
+	
+	<!-- ###########################  End of section where you can add and remove elements ########################### -->	
+
+	<div class="col12 last">
+		<%- partial('footer') %>
+	</div>
+</section>
+</body>

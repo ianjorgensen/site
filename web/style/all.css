@@ -148,6 +148,10 @@ h1 {
 }
 #contact #facilities {
   padding-top: 40px;
+  height: 294px;
+}
+#contact #facilities .slide {
+  position: relative;
 }
 #contact #facilities img {
   width: 100%;
@@ -156,18 +160,27 @@ h1 {
 
   display: block;
   display: none;
+  height: 254px;
 }
 #contact #facilities img:first-child {
   display: block;
 }
 #contact #facilities li {
   display: none;
+  position: absolute;
+  width: 395px;
+  height: 254px;
+  top: 0;
+  left: 0;
 }
 #contact #facilities li:first-child {
   display: block;
 }
 #contact #facilities p {
   padding-top: 40px;
+  position: relative;
+  padding-left: 425px;
+  width: 100% !important;
   margin: 0px !important;
 }
 #contact #facilities p,
@@ -176,38 +189,38 @@ h1 {
   margin: 0px 3% 0px 0;
   width: 39.5%;
 }
-#work img {
+#project img {
   width: 100%;
   height: 100%;
   /*auto;*/
 
   display: block;
 }
-#work > div {
+#project > div {
   padding: 10px 0;
 }
-#work .full iframe {
+#project .full iframe {
   width: 565px !important;
   margin-left: 217.5px;
 }
-#work iframe {
+#project iframe {
   width: 100%;
   height: 318px;
 }
-#work #info {
+#project #info {
   background-color: rgba(248, 248, 248, 0.7);
   padding: 15px;
 }
-#work #info ul {
+#project #info ul {
   list-style-type: none;
   margin-left: 0;
   margin: 3px;
   padding: 0px;
 }
-#work #info li {
+#project #info li {
   color: #0098AF;
 }
-#work #info h4 {
+#project #info h4 {
   font-size: 12px;
   text-transform: uppercase;
   font-style: italic;
@@ -215,17 +228,17 @@ h1 {
   font-weight: normal;
   margin: 0px;
 }
-#work .narrow {
+#project .narrow {
   width: 39.5%;
   float: left;
   margin: 0px 3% 0px 0;
 }
-#work .wide {
+#project .wide {
   width: 56.5%;
   float: left;
   margin: 0px 3% 0px 0;
 }
-#work .full {
+#project .full {
   width: 100%;
   margin-left: 0;
 }
@@ -284,6 +297,7 @@ h1 {
   float: left;
   margin: 0px 3% 0px 0;
   width: 14%;
+  height: 90px;
   padding-top: 15px;
 }
 #about #love li .in {
