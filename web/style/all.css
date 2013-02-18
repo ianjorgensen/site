@@ -5,14 +5,25 @@
 }
 .inner #logo {
   position: absolute;
-  padding: 10px 0px;
+  top: 0;
+  margin: 0;
+  width: auto;
+  padding: 10px 0 15px 0;
+  border-left: none;
 }
 .inner #logo .line {
   font-size: 25px;
 }
 .inner header {
   position: relative;
-  margin: 10px 0;
+  margin: 10px 0 15px 0;
+  top: 0;
+  left: 0;
+  height: 55px;
+  z-index: 100;
+  border-bottom: 1px solid #dce1e2;
+  /*todo*/
+
 }
 nav {
   position: relative;
@@ -36,6 +47,10 @@ ul {
   /*auto;*/
 
   display: block;
+}
+.column {
+  float: left;
+  margin: 0px 3% 0px 0;
 }
 .edge {
   margin: 0px !important;
@@ -77,7 +92,7 @@ ul {
   width: 90.5%;
 }
 .col12 {
-  width: 99%;
+  width: 100%;
   margin-left: 0;
 }
 li img {
@@ -96,12 +111,23 @@ h1 {
   width: 22.5%;
   padding-bottom: 15px;
 }
+#works li p {
+  margin: 5px 10px;
+  color: #777;
+  text-decoration: none;
+}
+#works li a:hover {
+  text-decoration: none;
+}
+#works li:hover {
+  background: rgba(248, 248, 248, 0.7);
+}
 #works img {
   width: 225px;
   height: 250px;
 }
 #contact #office {
-  padding-top: 80px;
+  padding-top: 10px;
 }
 #contact #office img {
   width: 100%;
@@ -134,6 +160,12 @@ h1 {
 #contact #facilities img:first-child {
   display: block;
 }
+#contact #facilities li {
+  display: none;
+}
+#contact #facilities li:first-child {
+  display: block;
+}
 #contact #facilities p {
   padding-top: 40px;
   margin: 0px !important;
@@ -144,8 +176,58 @@ h1 {
   margin: 0px 3% 0px 0;
   width: 39.5%;
 }
-#work {
-  display: none;
+#work img {
+  width: 100%;
+  height: 100%;
+  /*auto;*/
+
+  display: block;
+}
+#work > div {
+  padding: 10px 0;
+}
+#work .full iframe {
+  width: 565px !important;
+  margin-left: 217.5px;
+}
+#work iframe {
+  width: 100%;
+  height: 318px;
+}
+#work #info {
+  background-color: rgba(248, 248, 248, 0.7);
+  padding: 15px;
+}
+#work #info ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin: 3px;
+  padding: 0px;
+}
+#work #info li {
+  color: #0098AF;
+}
+#work #info h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: grey;
+  font-weight: normal;
+  margin: 0px;
+}
+#work .narrow {
+  width: 39.5%;
+  float: left;
+  margin: 0px 3% 0px 0;
+}
+#work .wide {
+  width: 56.5%;
+  float: left;
+  margin: 0px 3% 0px 0;
+}
+#work .full {
+  width: 100%;
+  margin-left: 0;
 }
 #deliverables h2 {
   font-size: 1.17em;
@@ -203,4 +285,7 @@ h1 {
   margin: 0px 3% 0px 0;
   width: 14%;
   padding-top: 15px;
+}
+#about #love li .in {
+  display: none;
 }

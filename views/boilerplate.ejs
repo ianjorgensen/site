@@ -9,28 +9,25 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="/js/lib/jquery.js"></script>
+    <script src="/js/all.js"></script>
 
-    <link href="/style/style.css" rel="stylesheet">
-    
+    <link href="/style/style.css" rel="stylesheet">    
     <link href="/style/all.css" rel="stylesheet">
-
-    
-  <!--  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet'>
     
     <script>
-    function reload() {
-      var queryString = '?reload=' + new Date().getTime();
-      $('link[rel="stylesheet"]').each(function () {
-          if (this.href.indexOf('fonts.googleapis') === - 1) {
-            this.href = this.href.replace(/\?.*|$/, queryString);
-          }
-      });
-    }
-
-    //setInterval(reload, 100);
-
+    $(function() {
+      hoverfy('#love li');
+      // do image slider
+    });
     </script>
   </head>
-  <%- body %>
+  <body class='inner'>  
+    
+    <section id="content">
+      <%- partial('header', {active: page.name}) %>
+      <%- body %>
+      <%- partial('footer') %>
+    </section>
+  </body>
 </html>

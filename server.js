@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 	response.render('home', {rows: []});
 });
 app.get('/:view', function(request, response) {
-	response.render(request.params.view);
+	response.render(request.params.view, {page: {name: request.params.view}});
 });
 
 app.use(less({ src: public }));

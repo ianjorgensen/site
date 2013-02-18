@@ -1,85 +1,11 @@
 <% layout('boilerplate') -%>
-<body class='inner'>  
-<style>
-#content {
-	width: 990px;
-	margin-bottom: 80px;
-	margin: auto;	
-}
-.inner {
-	margin: 0px;
-}
-.inner #logo .line {
-	font-size: 25px;
+<!-- #################################### work ##################################### -->
+<article id='work'>
+	<!-- title -->
+	<h1>Title for this work</h1>
 
-}
-
-.inner #logo {
-	position: absolute;
-	padding: 10px 0px;
-}
-
-.inner header {
-	position: relative;
-	margin: 10px 0;
-}
-nav {
-	position: relative;
-	float: right;
-	right: 0px;
-	margin-top: -4px;
-}
-.pad {
-	
-	padding-left: 10px;	
-}
-
-p {
-	margin: 0px;
-}
-.pad last {
-	padding-right: 10px;
-}
-
-h4 {
-font-size: 12px;
-text-transform: uppercase;
-font-style: italic;
-color: grey;
-font-weight: normal;
-margin: 0px;
-}
-.info ul {
-	list-style-type: none;
-	margin-left: 0;
-	margin: 3px;
-	padding: 0px;
-}
-
-.info {
-	background-color: rgba(248, 248, 248, 0.7);
-	padding: 15px;
-}
-.info li {
-	color: #0098AF;
-}
-
-h1 {
-	margin-bottom: 15px;
-}
-
-</style>
-<section id="content" class='work onepcssgrid-1000'>
-	<%- partial('header', {active: 'work'}) %>
-	
-	<div class="col12 pad last">
-		<h1>Title for this work</h1>	
-	</div>
-
-
-
-	<div class="col2 first pad">
-		<div class="info">
+	<div id='intro'>
+		<div id='info' class='column col2'>
 			<ul>
 	    	<li><h4>Serivces</h4></li>
 	    	<li>Research</li>
@@ -90,36 +16,43 @@ h1 {
 	    	<li><h4>Timeline</h4></li>
 	    	<li>2011</li>
 	  	</ul>
-  	</div>
-	</div>	
-	<div class="col10 last pad">
+	  </div>
+	  <div class='column col10 edge'>
+	  	<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>	
+	  </div>
+		<div class='clear'></div>
+	</div>
+	<!-- you can put as many of these as you want -->
+	<div>
+		<div class='narrow'>
+			<img src='/img/img.png'>
+		</div>
+		<div class='wide edge'>
+			<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+		</div>
+		<div class='clear'></div>
+	</div>
+
+	<div>
+		<div class='wide'>
+			<iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</div>
+		<div class='narrow edge'>
+			<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+		</div>
+		<div class='clear'></div>
+	</div>
+	
+	
+	<div class='full'>
 		<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
 	</div>
 
-
-	<div class="col7 first">
-		<img width='565' src='/img/img.png'>
+	<div class='full'>
+		<img src='/img/img.png'>
 	</div>
-	<div class="col5 last">
-		
+	
+	<div class='full'>
+		<iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</div>
-
-	<div class="col12 last">
-		<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-	</div>
-
-	<div class="col12 last">
-		<img width='990' src='/img/img.png'>
-	</div>
-
-	<div class="col5 first">
-		<img width='395' src='/img/img.png'>
-	</div>
-	<div class="col7 last">
-		<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-	</div>	
-	<div class="col12 last">
-		<%- partial('footer') %>
-	</div>
-</section>
-</body>
+</article>

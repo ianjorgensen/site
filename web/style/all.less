@@ -5,20 +5,28 @@
 }
 
 .inner {
-
   #logo {
     position: absolute;
-    padding: 10px 0px;
+    top: 0;
+  	margin: 0;
+  	width: auto;
+  	padding: 10px 0 15px 0;
+  	border-left: none;
 
     .line {
       font-size: 25px;
     }
   }
   
-  header {
-    position: relative;
-    margin: 10px 0;
-  }
+   header {
+	  position: relative;
+    margin: 10px 0 15px 0;
+	  top: 0;
+	  left: 0;
+	  height: 55px;
+	  z-index: 100;
+	  border-bottom: 1px solid rgb(220, 225, 226); /*todo*/
+	}
 }
 
 nav {
@@ -45,10 +53,11 @@ ol, ul {
 	display: block;
 }
 
-.column (@left: 30px) {
+.column {
 	float: left;
 	margin: 0px 3% 0px 0;
 }
+
 .edge {
 	margin: 0px !important;
 }
@@ -67,7 +76,7 @@ ol, ul {
 .col9 { width: 73.5%; }
 .col10 { width: 82%; }
 .col11 { width: 90.5%; }
-.col12 { width: 99%; margin-left: 0;}
+.col12 { width: 100%; margin-left: 0;}
 
 li img {
 	.fullwidth;
@@ -82,6 +91,20 @@ h1 {
 		.column;
 		.col3;
 		padding-bottom: 15px;
+
+		p {
+			margin: 5px 10px;
+			color: #777;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	li:hover {
+		background: rgba(248, 248, 248, 0.7);
 	}
 
 	img {
@@ -92,7 +115,7 @@ h1 {
 
 #contact {
 	#office {
-		padding-top: 80px;
+		padding-top: 10px;
 
 		img {
 			.fullwidth;
@@ -121,7 +144,13 @@ h1 {
 			display: block;
 		}
 
-		ul {
+	
+		li {
+			display: none;
+		}
+
+		li:first-child {
+			display: block;
 		}
 
 		p {
@@ -138,7 +167,62 @@ h1 {
 }
 
 #work {
-	display: none;
+	img {
+		.fullwidth;
+	}
+
+	> div {
+		padding: 10px 0;
+	}
+
+	.full {
+		iframe {
+			width: 565px !important;
+			margin-left: 217.5px;
+		}
+	}
+
+	iframe {
+		width: 100%;
+		height: 318px;
+	}
+
+	#info {
+		background-color: rgba(248, 248, 248, 0.7);
+		padding: 15px;
+		
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+			margin: 3px;
+			padding: 0px;
+		}
+
+		li {
+			color: #0098AF;
+		}
+
+		h4 {
+			font-size: 12px;
+			text-transform: uppercase;
+			font-style: italic;
+			color: grey;
+			font-weight: normal;
+			margin: 0px;
+		}
+	}
+
+	.narrow {
+		.col5;
+		.column;
+	}
+	.wide {
+		.col7;
+		.column;
+	}
+	.full {
+		.col12;
+	}
 }
 #deliverables {
 	h2 {
@@ -205,5 +289,9 @@ h1 {
 		.column;
 		.col2;
 		padding-top: 15px;
+
+			.in {
+				display: none;
+			}
 	}
 }

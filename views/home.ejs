@@ -1,18 +1,36 @@
-<body>
-<% layout('boilerplate') -%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>line | a health care design studio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/all.js"></script>
 
+    <link href="/style/style.css" rel="stylesheet">    
+    <link href="/style/all.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet'>
+    
+    <script>
+    $(function() {
+      hoverfy('#love li');
+      // do image slider
+    });
+    </script>
+  </head>
+<body>
 <script src="/js/many-lines/adapted.particles.js"></script>
 <script src="/js/many-lines/adapted.library.js"></script>
 
 <script>
-	$(document).ready(function() {
+	$(function() {
 		init();
 		initParticleSystem();
-	});	
-
-	var href = function(page) {
-		window.location = '/' + page;
-	};
+	});
 </script>
 <canvas height="700" width="700" id="canvas">&nbsp;</canvas>
 
@@ -50,3 +68,4 @@
 	</section>
 </div>
 </body>
+</html>
