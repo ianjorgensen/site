@@ -11,7 +11,7 @@ var HEIGHT = 1000;
 var intervalID = 0;
 var cursorX = 150;
 var cursorY = 150;
-var fadeRate = .015;//.028;
+var fadeRate = .029;//.028;
 var showLog = true;
 
 
