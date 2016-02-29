@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>line | a health care design studio</title>
+    <title>line | a health care technology design studio</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="/js/lib/jquery.js"></script>
     <script src="/js/all.js"></script>
+    <script src="/js/newsletter.js"></script>
     <script src="/js/many-lines/adapted.particles.js"></script>
 		<script src="/js/many-lines/adapted.library.js"></script>
 
@@ -20,6 +21,7 @@
 			init();
 			initParticleSystem();
 		});
+
 		</script>
   </head>
 <body>
@@ -30,45 +32,74 @@
 	<section id="content">
 		<header>
 			<section id="logo">
-				<span class="line">line</s0pan>
-				<span class="description"> a health care design studio in the heart of Copenhagen</span>
+				<span class="line">line<span class="description"> a health care design studio</span>
+				<br>
+				<span class="description slogan">We make patient centered health care solutions for ourselves and others.</span>
+				<section id='follow'>
+					<div id='invite' class="form left loop description slogan" style='float'>Keep me in the loop </div>
+					<form class='left form' action="http://linehq.createsend.com/t/j/s/xhyik/" method="post" id="subForm">
+							<input type="text" name="cm-xhyik-xhyik" placeholder='you@mail' id="xhyik-xhyik" size="28" />
+					</form>
+					<div id='plus' class="form left loop description slogan">
+						<a  href='#' id='plusa' onclick='$("#subForm").submit(); return false;' id='submit'>+</a>
+					</div>
+					<div id='thanks' class="left loop description slogan">We'll keep you in the loop!</div>
+					<div id='error' class="left loop description slogan">Oops. The email doesnt look right, try again.</div>
+					<div class='clear'></div>
+				</section>
 			</section>
+			<nav class="clearfix" id="nav">
+		<a href="/" class="active"> Home</a>
+		<a href="/about"> About</a>
+		<a href="/showcase"> Showcase</a>
+		<a href="/services"> Services</a>
+		<a href="/contact"> Contact</a>
+	</nav>
 		</header>
 	</section>
-	<section id="intro">
+	<section id="boxes">
 		<div class='content'>
 		<ul class='clearfix'>
-			<li>
-				<a href='/about'>
+			<li id='about'>
+				<a href='/about'id='about'>
 					<h3>About</h3>
-					<p>Line is a minimal and flexible node.js web application framework, providing
-						a robust set of features for building single and multi-page, and hybrid web applications.</p>
+					<p>We are a health care design studio in the heart of Copenhagen. Get to know us a little better.</p>
 				</a>
 			</li>
-			<li>
-				<a href='/deliverables'>
-					<h3>Deliverables</h3>
-					<p>Line is a minimal and flexible node.js web application framework, providing
-						a robust set of features for building single and multi-page, and hybrid web applications.</p>
+			<li id='work'>
+				<a href='/showcase'>
+					<h3>Showcase</h3>
+					<p>Look at some of our best work. Small scale to big scale. Concept to product. Imagine what we could do for you.</p>
 				</a>
 			</li>
-			<li>
-				<a href='/work'>
-					<h3>Work</h3>
-					<p>Line is a minimal and flexible node.js web application framework, providing
-						a robust set of features for building single and multi-page, and hybrid web applications.</p>
-				</a>
+			<li id='deliverables'>
+				<a href='/services'>
+					<h3>Services</h3>
+					<p>We research design and develop health care products and services. How can we help you?</p>
+			    </a>
 			</li>
-			<li>
+			<li id='contact'>
 				<a href='/contact'>
 					<h3>Contact</h3>
-					<p>Line is a minimal and flexible node.js web application framework, providing
-						a robust set of features for building single and multi-page, and hybrid web applications.</p>
+					<p>We would love to hear from you. Get in touch or just come visit us at our beautiful office.</p>
 				</a>
 			</li>
 		</ul>
 	</div>
 	</section>
 </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38816967-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

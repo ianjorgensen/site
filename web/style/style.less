@@ -51,10 +51,11 @@ strong {
 }
 
 #footer {
-  width: 100px;
+  width: 500px;
   margin: auto;
   font-size: 12px;
   padding: 10px;
+  padding-bottom: 30px; 
 }
 
 .current-page {
@@ -101,28 +102,46 @@ nav a {
 
 /* logo */
 
+.lineblue {
+  color: rgb(63, 127, 182) !important;
+}
+
 #logo {
-  margin-top: 160px;
-  margin-bottom: 150px;
+  margin-top: 190px;
+  margin-bottom: 120px;/*150px;*/
   margin-left: 80px;
   padding-left: 40px;
-  width: 740px;/*440px;*/
+  width: 890px;/*740px;*/
   border-left: 1px dotted #eee;
   -webkit-font-smoothing: antialiased;
 
   .line {
     display: block;
     font: 400 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #353535;
+    .lineblue;
     width: 100%;
+
+    a {
+      .lineblue;
+    }
+
+    a:hover {
+      .lineblue;
+    }
   }
 
   .description {
     position: relative;
-    top: -5px;
-    font: 100 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #cecece; /* rgb(172, 172, 172)*/
+    font: 100 53px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(138, 137, 137);
     line-height: .75;
+  }
+
+  .slogan {
+    color: rgb(223, 161, 161);
+    color: rgb(124, 166, 206);
+    font-size: 26px;
+    font-weight: 200;
   }
 
   em {
@@ -143,6 +162,12 @@ nav a {
   }
 }
 
+#nav {
+  position: absolute;
+float: right;
+margin-top: -4px;
+top: 30px;
+}
 /* navigation */
 nav {
   position: fixed;
@@ -162,7 +187,7 @@ nav {
 
   a.active {
     font-weight: bold;
-    color: #353535;
+    color: #3f7fb6; /*353535*/
   }
 }
 /* clearfix */
@@ -190,7 +215,7 @@ html[xmlns] .clearfix {
 
 /* boxes */
 
-#intro {
+#boxes {
 
   div {
     margin-left: 80px;
@@ -200,7 +225,7 @@ html[xmlns] .clearfix {
     
 
     background: url(/img/hr.png) top center no-repeat;
-    margin-left: 180px;
+    margin-left: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 12px;
@@ -213,12 +238,19 @@ html[xmlns] .clearfix {
     float: left;
   }
 
-  li:hover {
-    background: rgba(248, 248, 248, 0.7);
-    text-decoration: none !important;
+  #boxes {
+    opacity:0.4 !important;
   }
-
+  li:hover {
+   /* background: rgba(248, 248, 248, 0.7);*/
+    text-decoration: none !important;
+    
+    h3 {
+      text-decoration: underline  !important;
+    }
+  }
   p {
+
     font-size: 13px;
     width: 100%;
     margin-top: 5px;
@@ -291,4 +323,44 @@ ol, ul {
   font: inherit;
   vertical-align: baseline;
   list-style: none;
+}
+
+
+@media (max-width: 1280px) {
+  #boxes div {
+    margin-left: 0px;
+  }
+  #boxes ul {
+    margin-left: 80px;
+  }
+  #content {
+    margin-left: 0px !important;
+  }
+  canvas {
+    width: 1200px;
+  }
+  #holder {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #boxes div {
+margin-left: 0px;
+}
+#boxes ul {
+margin-left: 10px;
+}
+#logo {
+margin-left: 10px;
+}
+#content {
+margin-left: 0px !important;
+}
+canvas {
+  width: 1000px;
+}
+#holder {
+  width: 1000px;
+}
 }

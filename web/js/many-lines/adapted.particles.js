@@ -6,12 +6,12 @@
 var _r;
 var _g;
 var _b;
-var _a = .5;
+var _a = 1;
 var rad = 100;
 var particleList;
 var system;
 var particleColor;
-var systemSize = 8;
+var systemSize = 6;
 var lots = false;
 
 var pcMode = false;
@@ -177,7 +177,7 @@ function setColor(targ){
 		var colorTint = Math.round(Math.random() * 7);
 		targ.colorTint = colorTint;
 		//getColor(colorTint);
-		_a = .55;
+		//_a = .55;
 		if (colorTint <= 1){
 			_r = 255;
 			_g = 0;

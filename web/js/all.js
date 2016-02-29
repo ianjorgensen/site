@@ -2,8 +2,8 @@ var hoverfy = function(sel, selIn, selOut) {
 	var lis = $(sel);
 
 	lis.each(function(i, li) {
-		var _in = $(this).find(selIn || '.in');
-		var _out = $(this).find(selOut || '.out');
+		var _in = $(this).find(selIn || '.out');
+		var _out = $(this).find(selOut || '.in');
 
 
 		$(this).hover(

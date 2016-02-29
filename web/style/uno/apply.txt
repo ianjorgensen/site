@@ -1,0 +1,31 @@
+The rates of Diabetes in the world are expected to rise 37% from 2000 to 2030. Furthermore, global health is changing rapidly and chronic diseases are the leading cause of mortality and morbidity in Europe. The consumer health market is changing to empower end users via mainstream mobile devices. Users of smartphones today have access to millions of disparate apps, each addressing different components of daily health. Consumers want meaningful actionable insights individualized to their social, clinical and medical or bio-metric device preferences. Currently there is little to no connectivity to partner devices, poor usability design and no feedback loop with your care providers. These gaps have created huge market inefficiency and further fragmented healthcare delivery and management across the globe. Thus the opportunity to create a services based platform that allows patients to make sense of disparate services and data strewn aimlessly across institutions, devices and apps.
+
+
+Line One is an app that helps people with type 1 diabetes to visualize and contextualize their blood sugar data. Unlike most diabetic applications its solely focused on type 1 diabetes, and on capturing all blood glucose readings, weight and activity from the devices, not on manual entry, last but not least its social in that you can share data with a community of patients like you. As people living with T1D, we want to have the data in a format that helps us see trends and learn from it. Not only is our data important, but the community and support network we have to analyze and share our learnings is critical. It is important to us as individuals and important to the resource and knowledge base around diabetes. We know through experience that the support network (doctors, peers, role models, family etc) is a hugely powerful and crucial aspect to managing chronic illness.
+
+Connecting and contextualizing patients’ blood glucose to other data helps patients learn and make informed decisions towards a healthy lifestyle. Knowledge, and a tight feedback loop are the first steps to control. Clinics and physicians can manage their patients track and performance in between visits. Current tools provide little data to no data on a patient's engagement and wellbeing.
+
+Premium version of mobile phone application will be sold to individuals with T1D. Insurance companies and health care providers can subscribe to our service for their client base. Eventually the data and the tools to analyze can will be licensed to research institutions and industries in the T1D vertical.
+
+
+Ian Jorgensen - Developer - ian@linehq.com
+
+Ian is an entrepreneur, computer and electronic engineer and designer at heart. Worked as a research assistant and later consultant to Copenhagen University, department of health care technology. Developed an open source healthcare wireless sensors network. Co-founded ge.tt a real time file sharing site. Created open source query based data messaging hub pubsub.io and created daatum.com one of the first open data wiki sites back in 2004. He’s also known for hacking blood glucose meters to get data out of them and making ambient displays of his blood sugar data.
+
+Sara Krugman - Designer - sara@linehq.com
+
+Sara is an interaction designer and researcher, from Copenhagen Institute for Interaction Design. She designs health care services, systems and products. Passionate about chronic disease and behavior change, Sara is inspired and informed by her experience of living with type 1 diabetes for 20 years. Sara has worked as a researcher at Mount Sinai Hospital in New York City and co-founded and directed a design and print studio in Queens, New York.
+
+Christian Selmer - MD - christian@linehq.com
+
+Christian is a Medical Doctor doing a PHD at Department of Cardiology at Gentofte Hospital in Copenhagen Denmark. Christian founded Mediconapps in 2009 and has developed medical apps for Apple iOS, Google Android and Windows Mobile devices since then. He is passionate about the intersection of healthcare and technology  accesible to patients, doctors and researchers alike. Christian works closely with Line, in designing, developing and communicating Line to health care sector.
+
+
+We have also developed Piddle the first mobile phone app to take and track urinalysis results. Using commercially available dip stick a user can take urinalysis test in the same way we would be able to do with expensive medical equipment. Through this product we have established a connection with Karolinska University Hospital that wants to test the application in homes in Sweden and clinics in Uganda.
+
+We've also started collaboration with Copenhagen X Prize, who is using the technology as part of their submission to Qualcomm Tricorder X Prize.
+
+The app was developed at a competition, where it won 1st price. The team is now flying to San Fransisco to compete in the healthcare developer world cup final at the Health 2.0 conference. We will also be attending and presenting Line One and Piddle and the self tracking symposium at Stanford Medicine X conference.
+
+
+https://docs.google.com/spreadsheet/embeddedform?formkey=dFBldTc1Ykk0Zzk3V0lxU0c3ckt3WkE6MQ&embedded=true&ifq&edit=AE3NhGJid348Xu3wJ9oJypJftSY4T2SH0XChZ88CQ20XqEyKuIwrm3o595Q10RZ6L3Z62OdxQ5uX6SZsWD7xbkap1OPT0jZrfw

@@ -11,9 +11,8 @@ var HEIGHT = 1000;
 var intervalID = 0;
 var cursorX = 150;
 var cursorY = 150;
-var fadeRate = .029;//.028;
+var fadeRate = .024;//.028;
 var showLog = true;
-
 
 function init() {
   	//ctx = $('#canvas')[0].getContext('2d');
@@ -59,6 +58,8 @@ function initCanvasSize(){
 function onMouseMove(evt) {
   cursorX = evt.pageX;
   cursorY = evt.pageY;
+
+ // todo: make sure it does the first drawing
 }
 
 function line(x,y,r) {
