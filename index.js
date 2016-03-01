@@ -3,8 +3,9 @@ var express = require('express')
   , app = express()
   , fs = require('fs')
   , less = require('less-middleware')
-  , public = __dirname + '/web'
-  , port = process.argv[2] || 8080;
+  , public = __dirname + '/web';
+
+app.set('port', (process.env.PORT || 5000));
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
@@ -25,7 +26,7 @@ app.get('/showcase/:project', function(request, response) {
 
 var render = function(view) {
 	return function(request, response) {
-		response.render(view, {page: {name: view, title: view}});	
+		response.render(view, {page: {name: view, title: view}});
 	}
 };
 
@@ -51,5 +52,7 @@ app.use(function(reqquest, response, next){
 	response.render('404');
 });
 
-app.listen(port);
-console.log('Listening on port ' + port);
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});

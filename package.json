@@ -1,22 +1,25 @@
 {
-  "name": "side",
-  "description": "linehq site",
-  "version": "1.0.0-34",
-  "dependencies": {
-    "express": "3.x",
-    "ejs": ">0.8.2",
-    "ejs-locals": ">0.1",
-    "less-middleware": "~0.1.9"
-  },
+  "name": "linehq-homepage",
+  "version": "0.0.1",
+  "description": "Line HQ",
+  "main": "index.js",
   "scripts": {
-    "start": "./server.js"
+    "start": "node index.js"
   },
-  "domains": [
-    "www.linehq.com",
-    "linehq.com"
-  ],
+  "dependencies": {
+    "express": "4.13.3"
+  },
   "engines": {
-    "node": "0.8.x"
+    "node": "0.12.7"
   },
-  "subdomain": "linestudio"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
